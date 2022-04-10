@@ -1,6 +1,5 @@
 import javax.json.JsonArray;
 import javax.json.JsonObject;
-import java.util.Arrays;
 
 public class WeatherResponse {
     private final DailyForecast[] dailyForecasts;
@@ -14,7 +13,6 @@ public class WeatherResponse {
             dailyForecasts[forecast] = dailyForecast;
         }
     }
-
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

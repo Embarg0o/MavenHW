@@ -33,7 +33,6 @@ public class DailyForecast {
                 .getJsonObject("Night")
                 .getString("IconPhrase");
     }
-
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -46,7 +45,6 @@ public class DailyForecast {
         stringBuilder.append("ТЕМПЕРАТУРА: \n");
         stringBuilder.append("минимальная: " + minimumTemperature + " C\n");
         stringBuilder.append("максимальная: " + maximumTemperature + " C\n");
-
         return stringBuilder.toString();
     }
 }
